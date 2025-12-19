@@ -381,6 +381,6 @@ You can do more than the minimum but every solution MUST answer the following qu
 The size of the documents could grow to millions or trillions, taking GB to TB memory. As the amount of data for vector search scales up, the step of vector search could become a dominant factor. Below are some ideas to help scale out this vector search step you can try. Test out below ideas and report the performance numbers you observe.
 1.	Batching is a commonly used way to optimize system performance. Try batching at the vector search step, and plot the system performance, throughput, latency, with different batch sizes, ranging from 1,4,8,16,32,64,128. Analyze the performance numbers you observe, can you explain why?
 2.	Instead of using Flat search, try with IVFFlat search as vector database engine.
-
+Tr
 
 

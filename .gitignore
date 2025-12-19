@@ -1,0 +1,19 @@
+# Large model files (too big for GitHub)
+*.gguf
+
+# Preprocessed data (can be regenerated)
+preprocessed_documents.json
+
+# Video recordings
+*.mp4
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Output files
+results.txt
+
+# OS files
+.DS_Store
