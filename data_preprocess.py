@@ -37,7 +37,7 @@ def parse_args():
     parser.add_argument(
         "--model",
         type=str,
-        default="BAAI/bge-large-en-v1.5",
+        default="BAAI/bge-base-en-v1.5",
         help="SentenceTransformer model name to use for encoding.",
     )
     return parser.parse_args()
@@ -48,7 +48,7 @@ def load_documents(path):
         return json.load(f)
 
 
-def encode_documents(documents, model_name = "BAAI/bge-large-en-v1.5",
+def encode_documents(documents, model_name = "BAAI/bge-base-en-v1.5",
     batch_size = 64, device = "cpu"):
     model = SentenceTransformer(model_name, device=device)
     texts = [doc["text"] for doc in documents]

@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer
 class QueryEncoder:
     """Component 1: Encodes user queries into embedding vectors."""
     
-    def __init__(self, model_name: str = "BAAI/bge-large-en-v1.5", device: str = "cpu"):
+    def __init__(self, model_name: str = "BAAI/bge-base-en-v1.5", device: str = "cpu"):
         self.model = SentenceTransformer(model_name, device=device)
     
     def encode(self, query: str) -> np.ndarray:
